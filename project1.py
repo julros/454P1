@@ -5,7 +5,7 @@ def problem2()
 
 
 def main()
-  choice '0'
+  choice = '0'
   while choice != 'q'
     print("Please choose a problem.")
     print("Type '1' for the first problem.")
@@ -18,5 +18,6 @@ def main()
     if choice == '2'
       problem2()
     if choice == 'q'
+      #break out of while and exit main
     
 main()
