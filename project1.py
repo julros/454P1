@@ -87,7 +87,7 @@ def problem1(n):
                                 [0]],
                                 dtype = "object")
 
-    return count(n, startingStates, transitionMatrix, acceptingStates)
+    return count(n, startingStates, transitionMatrix, acceptingStates)[0][0]
 
 def count(n, startingStates, matrixCounter, acceptingStates):
     # Raise transition matrix to power of the length of strings the user inputs
@@ -96,14 +96,22 @@ def count(n, startingStates, matrixCounter, acceptingStates):
     # ... then Matrix Product on resulting product and acceptingStates
     return np.dot(np.dot(startingStates, transitions), acceptingStates)
 
+def findInt(k, tuple):
+    return
+
 def problem1Helper():
-    n = input("Input n: ")
+    n = input("n = ")
     result = problem1(int(n))
-    print("n = ", n)
     print("number of strings of length n is : ", str(result))
 
-def problem2():
-    print("Problem 2 not finished")
+def problem2Helper():
+    k = input("Input: k = ")
+    # Maybe change later depending on how we ask user for input
+    # Currently getting input as a tuple split by commas
+    # Might have implications later on when passing it to functions
+    digits = tuple(int(x.strip()) for x in input("Digits permitted (Split by commas): ").split(','))
+    result = findInt(k, digits)
+    print("Shortest multiple of k using digits", digits, ":", result)
 
 def main():
   choice = '0'
@@ -115,7 +123,7 @@ def main():
         problem1Helper()
         print('\n')
     if choice == '2':
-        problem2()
+        problem2Helper()
     if choice == 'q':
         break
 
