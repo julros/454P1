@@ -103,11 +103,12 @@ def findInt(k, tuple):
     while(flag)
         ans = k * mult
         while(num)
-        digit = num%10
-        num = num//10
-        #if digit is not in tuple
-            flag = false
-            return
+            #process digit right to left
+            digit = num%10
+            num = num//10
+            #if digit is not in tuple
+                flag = false
+                return
         mult = mult + 1
     return
 
