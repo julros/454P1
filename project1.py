@@ -97,6 +97,18 @@ def count(n, startingStates, matrixCounter, acceptingStates):
     return np.dot(np.dot(startingStates, transitions), acceptingStates)
 
 def findInt(k, tuple):
+    mult = 1
+    flag = true
+    num = k
+    while(flag)
+        ans = k * mult
+        while(num)
+        digit = num%10
+        num = num//10
+        #if digit is not in tuple
+            flag = false
+            return
+        mult++
     return
 
 def problem1Helper():
