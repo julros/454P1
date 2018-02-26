@@ -109,8 +109,7 @@ def findInt(k, tuple):
                 flag = false
                 return
         mult = mult + 1
-        print("Shortest multiple of k using digits ")
-        #print tuple numbers
+        print("Shortest multiple of k using digits {%s}:" % (tuple,)")
         print(ans)
     return
 
