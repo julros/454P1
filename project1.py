@@ -108,7 +108,7 @@ def findInt(k, tuple):
         #if digit is not in tuple
             flag = false
             return
-        mult++
+        mult = mult + 1
     return
 
 def problem1Helper():
