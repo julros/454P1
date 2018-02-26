@@ -1,4 +1,4 @@
-# Julie Rosen, Chase Watson, Jack Newman
+# Julie Rosen, Chase Watso
 
 import numpy as np
 
@@ -109,9 +109,7 @@ def findInt(k, tuple):
                 flag = false
                 return
         mult = mult + 1
-        print("Shortest multiple of k using digits {%s}:" % (tuple,)")
-        print(ans)
-    return
+    return ans
 
 def problem1Helper():
     n = input("n = ")
