@@ -99,13 +99,12 @@ def count(n, startingStates, matrixCounter, acceptingStates):
 def findInt(k, tuple):
     mult = 1
     flag = true
-    num = k
     while(flag)
         ans = k * mult
-        while(num)
+        while(k)
             #process digit right to left
-            digit = num%10
-            num = num//10
+            digit = k%10
+            k = k//10
             #if digit is not in tuple
                 flag = false
                 return
