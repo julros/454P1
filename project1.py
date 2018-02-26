@@ -1,4 +1,4 @@
-# Julie Rosen, Chase Watso
+# Julie Rosen, Chase Watson
 
 import numpy as np
 
